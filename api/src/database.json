@@ -1,0 +1,672 @@
+{
+
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Carne Vermelha"
+    },
+    {
+      "id": 2,
+      "nome": "Carne Branca"
+    },
+    {
+      "id": 3,
+      "nome": "Embutido"
+    },
+    {
+      "id": 4,
+      "nome": "Fabricado"
+    },
+    {
+      "id": 5,
+      "nome": "Condimento"
+    },
+    {
+      "id": 6,
+      "nome": "Ingrediente"
+    }
+  ],
+
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Picanha",
+      "imagem": "images/picanha.png",
+      "categoria": 1,
+      "preco_de_venda": 60,
+      "medida_de_unidade": "kg",
+      "estoque_minimo": 80,
+      "estoque_maximo": 200,
+      "estoque_de_resuprimento": 100
+    },
+    {
+      "id": 2,
+      "nome": "Frango",
+      "imagem": "images/frango.png",
+      "categoria": 2,
+      "preco_de_venda": 26,
+      "medida_de_unidade": "kg",
+      "estoque_minimo": 60,
+      "estoque_maximo": 180,
+      "estoque_de_resuprimento": 80
+    },
+    {
+      "id": 3,
+      "nome": "Costela de Porco",
+      "imagem": "images/costela.png",
+      "categoria": 1,
+      "preco_de_venda": 30,
+      "medida_de_unidade": "kg",
+      "estoque_minimo": 70,
+      "estoque_maximo": 100,
+      "estoque_de_resuprimento": 50
+    },
+    {
+      "id": 4,
+      "nome": "Linguiça de Porco",
+      "imagem": "images/linguica_porco.png",
+      "categoria": 3,
+      "preco_de_venda": 35,
+      "medida_de_unidade": "kg",
+      "estoque_minimo": 80,
+      "estoque_maximo": 200,
+      "estoque_de_resuprimento": 110
+    },
+    {
+      "id": 5,
+      "nome": "Linguiça de Frango",
+      "imagem": "images/linguica_frango.png",
+      "categoria": 3,
+      "preco_de_venda": 35,
+      "medida_de_unidade": "kg",
+      "estoque_minimo": 80,
+      "estoque_maximo": 200,
+      "estoque_de_resuprimento": 110
+    },
+    {
+      "id": 6,
+      "nome": "Cupim",
+      "imagem": "images/cupim.png",
+      "categoria": 1,
+      "preco_de_venda": 40,
+      "medida_de_unidade": "kg",
+      "estoque_minimo": 70,
+      "estoque_maximo": 170,
+      "estoque_de_resuprimento": 80
+    }
+  ],
+
+  "promocoes": [
+    {
+      "id": 1,
+      "categoria": 1,
+      "data_de_inicio": "01/01/0000",
+      "data_de_termino": "02/01/0000",
+      "data_de_cadastro": "01/01/0000",
+      "valor_promocao": 10.0
+    },
+    {
+      "id": 2,
+      "categoria": 1,
+      "data_de_inicio": "10/01/0000",
+      "data_de_termino": "20/01/0000",
+      "data_de_cadastro": "05/01/0000",
+      "valor_promocao": 50.0
+    },
+    {
+      "id": 3,
+      "categoria": 3,
+      "data_de_inicio": "01/01/0000",
+      "data_de_termino": "02/01/0000",
+      "data_de_cadastro": "01/01/0000",
+      "valor_promocao": 10.0
+    },
+    {
+      "id": 4,
+      "categoria": 2,
+      "data_de_inicio": "01/02/0000",
+      "data_de_termino": "10/02/0000",
+      "data_de_cadastro": "01/01/0000",
+      "valor_promocao": 10.0
+    }
+  ],
+
+  "perdas": [
+    {
+      "id": 1,
+      "quantidade": 20,
+      "descricao": "Restos de picanha cortada",
+      "produto_info": 1
+    },
+    {
+      "id": 2,
+      "quantidade": 12,
+      "descricao": "Picanha estava estragada",
+      "produto_info": 1
+    },
+    {
+      "id": 3,
+      "quantidade": 5,
+      "descricao": "Linguiça estava com mal cheiro",
+      "produto_info": 5
+    }
+  ],
+
+  "lotes": [
+    {
+      "id": 1,
+      "preco_do_lote": 560.25,
+      "data_da_compra": "01/01/0000",
+      "data_da_validade": "03/03/0000",
+      "data_de_producao": "01/01/0000",
+      "quantidade": 1
+    },
+    {
+      "id": 2,
+      "preco_do_lote": 1201.14,
+      "data_da_compra": "01/01/0000",
+      "data_da_validade": "01/02/0000",
+      "data_de_producao": "01/01/0000",
+      "quantidade": 2
+    },
+    {
+      "id": 3,
+      "preco_do_lote": 823.54,
+      "data_da_compra": "01/01/0000",
+      "data_da_validade": "03/03/0000",
+      "data_de_producao": "01/01/0000",
+      "quantidade": 1
+    },
+    {
+      "id": 4,
+      "preco_do_lote": 410.54,
+      "data_da_compra": "01/01/0000",
+      "data_da_validade": "01/02/0000",
+      "data_de_producao": "01/01/0000",
+      "quantidade": 1
+    },
+    {
+      "id": 5,
+      "preco_do_lote": 2342.20,
+      "data_da_compra": "01/01/0000",
+      "data_da_validade": "05/04/0000",
+      "data_de_producao": "01/01/0000",
+      "quantidade": 3
+    },
+    {
+      "id": 6,
+      "preco_do_lote": 121.23,
+      "data_da_compra": "01/01/0000",
+      "data_da_validade": "10/08/0000",
+      "data_de_producao": "01/01/0000",
+      "quantidade": 1
+    }
+  ],
+
+  "compras": [
+    {
+      "id": 1,
+      "data_de_registro": "00/00/0000",
+      "lote": 2
+    },
+    {
+      "id": 2,
+      "data_de_registro": "00/00/0000",
+      "lote": 3
+    },
+    {
+      "id": 3,
+      "data_de_registro": "00/00/0000",
+      "lote": 1
+    },
+    {
+      "id": 4,
+      "data_de_registro": "00/00/0000",
+      "lote": 4
+    },
+    {
+      "id": 5,
+      "data_de_registro": "00/00/0000",
+      "lote": 6
+    },
+    {
+      "id": 6,
+      "data_de_registro": "00/00/0000",
+      "lote": 5
+    }
+  ],
+  "produtos_info": [
+    {
+      "id": 1,
+      "lote": 2,
+      "produto": 1,
+      "preco_de_venda": 53.4
+    },
+    {
+      "id": 2,
+      "lote": 1,
+      "produto": 2,
+      "preco_de_venda": 25.2
+    },
+    {
+      "id": 3,
+      "lote": 3,
+      "produto": 3,
+      "preco_de_venda": 40.0
+    },
+    {
+      "id": 4,
+      "lote": 4,
+      "produto": 4,
+      "preco_de_venda": 15.6
+    },
+    {
+      "id": 5,
+      "lote": 5,
+      "produto": 5,
+      "preco_de_venda": 18.99
+    },
+    {
+      "id": 6,
+      "lote": 6,
+      "produto": 6,
+      "preco_de_venda": 12.99
+    }
+  ],
+
+  "estoques": [
+    {
+      "id": 1,
+      "produto:": 1,
+      "quantidade": 110
+    },
+    {
+      "id": 2,
+      "produto:": 2,
+      "quantidade": 70
+    },
+    {
+      "id": 3,
+      "produto:": 3,
+      "quantidade": 60
+    },
+    {
+      "id": 4,
+      "produto:": 4,
+      "quantidade": 200
+    },
+    {
+      "id": 5,
+      "produto:": 5,
+      "quantidade": 100
+    },
+    {
+      "id": 6,
+      "produto:": 6,
+      "quantidade": 100
+    }
+  ],
+
+  "enderecos": [
+    {
+      "id": 1,
+      "cidade": "Juiz de Fora",
+      "UF": "MG",
+      "bairro": "Centro",
+      "numero": "8000",
+      "complemento": "01",
+      "CEP": "1111-222"
+    },
+    {
+      "id": 2,
+      "cidade": "Juiz de Fora",
+      "UF": "MG",
+      "bairro": "Grambery",
+      "numero": "34",
+      "complemento": null,
+      "CEP": "1111-222"
+    },
+    {
+      "id": 3,
+      "cidade": "Juiz de Fora",
+      "UF": "MG",
+      "bairro": "Boa Vista",
+      "numero": "454",
+      "complemento": "34",
+      "CEP": "1111-222"
+    },
+    {
+      "id": 4,
+      "cidade": "Juiz de Fora",
+      "UF": "MG",
+      "bairro": "Teixeiras",
+      "numero": "4564",
+      "complemento": null,
+      "CEP": "1111-222"
+    },
+    {
+      "id": 5,
+      "cidade": "Juiz de Fora",
+      "UF": "MG",
+      "bairro": "Centro",
+      "numero": "5678",
+      "complemento": "07",
+      "CEP": "1111-222"
+    },
+    {
+      "id": 6,
+      "cidade": "Juiz de Fora",
+      "UF": "MG",
+      "bairro": "Jardim Glória",
+      "numero": "120",
+      "complemento": "01",
+      "CEP": "1111-222"
+    }
+  ],
+
+  "pessoas": {
+
+    "clientes": [
+      {
+        "id": 1,
+        "nome": "João",
+        "sobrenome": "Luiz",
+        "email": "jao@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 1,
+        "CPF": "111-222-333-44",
+        "CNPJ": "XX.XXX.XXX/0001-XX"
+      },
+      {
+        "id": 2,
+        "nome": "Lucas",
+        "sobrenome": "Crispim",
+        "email": "crispim@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 2,
+        "CPF": "111-222-333-44",
+        "CNPJ": "XX.XXX.XXX/0001-XX"
+      },
+      {
+        "id": 3,
+        "nome": "Luiza",
+        "sobrenome": "Martins",
+        "email": "luizinha@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 3,
+        "CPF": "111-222-333-44",
+        "CNPJ": "XX.XXX.XXX/0001-XX"
+      },
+      {
+        "id": 4,
+        "nome": "Alice",
+        "sobrenome": "Souza",
+        "email": "alice-souza@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 4,
+        "CPF": "111-222-333-44",
+        "CNPJ": "XX.XXX.XXX/0001-XX"
+      },
+      {
+        "id": 5,
+        "nome": "Xavier",
+        "sobrenome": "Bardem",
+        "email": "bardem@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 5,
+        "CPF": "111-222-333-44",
+        "CNPJ": "XX.XXX.XXX/0001-XX"
+      },
+      {
+        "id": 6,
+        "nome": "Maria",
+        "sobrenome": "Clara",
+        "email": "maria-clara@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 6,
+        "CPF": "111-222-333-44",
+        "CNPJ": "XX.XXX.XXX/0001-XX"
+      }
+    ],
+
+    "fornecedores": [
+      {
+        "id": 1,
+        "nome": "Maria",
+        "sobrenome": "Clara",
+        "email": "maria-clara@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 1,
+        "razao_social": "temp",
+        "nome_fantasia": "compania das carnes"
+      },
+      {
+        "id": 2,
+        "nome": "Almer",
+        "sobrenome": "Dutra",
+        "email": "dutra@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 1,
+        "razao_social": "temp",
+        "nome_fantasia": "Santa Maria Alimentações"
+      },
+      {
+        "id": 3,
+        "nome": "Pedro",
+        "sobrenome": "Mascaranhas",
+        "email": "pedro_masca@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 1,
+        "razao_social": "temp",
+        "nome_fantasia": "Abatadeuro Masca"
+      }
+    ],
+
+    "funcionários": [
+      {
+        "id": 1,
+        "nome": "Carlos",
+        "sobrenome": "Pessoa",
+        "email": "carlospessoa@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 5,
+        "usuario_administrador": true
+      },
+      {
+        "id": 2,
+        "nome": "José",
+        "sobrenome": "Metres",
+        "email": "metres@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 3,
+        "usuario_administrador": false
+      },
+      {
+        "id": 3,
+        "nome": "Carla",
+        "sobrenome": "Martins",
+        "email": "carla@gmail.com",
+        "telefone": "8888-8888",
+        "data_cadastro": "00/00/0000",
+        "endereco": 6,
+        "usuario_administrador": true
+      }
+    ]
+  },
+
+  "empresas": [
+    {
+      "id": 1,
+      "razao_social": "Corte Limpo LTDA",
+      "nome_fantasia": "Corte Limpo",
+      "atividade_economica": "Alimentação",
+      "email": "cortelimpo@gmail.com",
+      "endereco": 5
+    }
+  ],
+
+  "vendas": [
+    {
+      "id": 1,
+      "data_cadastro": "00/00/0000",
+      "forma_pagamento": "Cartão de crédito",
+      "produtos": [
+        {
+          "id": 1,
+          "nome": "Picanha",
+          "imagem": "images/picanha.png",
+          "categoria": 1,
+          "preco_de_venda": 60,
+          "medida_de_unidade": "kg",
+          "estoque_minimo": 80,
+          "estoque_maximo": 200,
+          "estoque_de_resuprimento": 100
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "data_cadastro": "00/00/0000",
+      "forma_pagamento": "Dinheiro",
+      "produtos": [
+        {
+          "id": 2,
+          "nome": "Frango",
+          "imagem": "images/frango.png",
+          "categoria": 2,
+          "preco_de_venda": 26,
+          "medida_de_unidade": "kg",
+          "estoque_minimo": 60,
+          "estoque_maximo": 180,
+          "estoque_de_resuprimento": 80
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "data_cadastro": "00/00/0000",
+      "forma_pagamento": "Dinheiro",
+      "produtos": [
+        {
+          "id": 1,
+          "nome": "Picanha",
+          "imagem": "images/picanha.png",
+          "categoria": 1,
+          "preco_de_venda": 60,
+          "medida_de_unidade": "kg",
+          "estoque_minimo": 80,
+          "estoque_maximo": 200,
+          "estoque_de_resuprimento": 100
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "data_cadastro": "00/00/0000",
+      "forma_pagamento": "Cartão de débito",
+      "produtos": [
+        {
+          "id": 4,
+          "nome": "Linguiça de Porco",
+          "imagem": "images/linguica_porco.png",
+          "categoria": 3,
+          "preco_de_venda": 35,
+          "medida_de_unidade": "kg",
+          "estoque_minimo": 80,
+          "estoque_maximo": 200,
+          "estoque_de_resuprimento": 110
+        },
+        {
+          "id": 5,
+          "nome": "Linguiça de Frango",
+          "imagem": "images/linguica_frango.png",
+          "categoria": 3,
+          "preco_de_venda": 35,
+          "medida_de_unidade": "kg",
+          "estoque_minimo": 80,
+          "estoque_maximo": 200,
+          "estoque_de_resuprimento": 110
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "data_cadastro": "00/00/0000",
+      "forma_pagamento": "Cartão de crédito",
+      "produtos": [
+        {
+          "id": 1,
+          "nome": "Picanha",
+          "imagem": "images/picanha.png",
+          "categoria": 1,
+          "preco_de_venda": 60,
+          "medida_de_unidade": "kg",
+          "estoque_minimo": 80,
+          "estoque_maximo": 200,
+          "estoque_de_resuprimento": 100
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "data_cadastro": "00/00/0000",
+      "forma_pagamento": "Cartão de débito",
+      "produtos": [
+        {
+          "id": 6,
+          "nome": "Cupim",
+          "imagem": "images/cupim.png",
+          "categoria": 1,
+          "preco_de_venda": 40,
+          "medida_de_unidade": "kg",
+          "estoque_minimo": 70,
+          "estoque_maximo": 170,
+          "estoque_de_resuprimento": 80
+        }
+      ]
+    }
+  ],
+
+  "devolucao": [
+    {
+      "id": 1,
+      "data_cadastro": "00/00/0000",
+      "descricao": "Devolução de 2 pacotes de torresmo pois estava próximo da validade",
+      "reaproveitaveis": [],
+      "id_vendas":[1,2]
+    }
+  ],
+
+  "caixa": {
+    "id": 1,
+    "data_cadastro": "00/00/0000",
+    "valor_abertura": 323.30,
+    "sangria": 1,
+    "id_vendas": [4,5]
+  },
+
+  "sangria": {
+    "id": 1,
+    "valor": 0,
+    "data_cadastro": "00/00/0000",
+    "descricao": "Não houve sangria"
+  },
+
+  "encomenda": {
+    "id": 1,
+    "data_cadastro": "00/00/0000",
+    "cliente_id": 2,
+    "id_venda": 3
+  }
+}
