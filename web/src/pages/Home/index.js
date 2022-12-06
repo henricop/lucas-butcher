@@ -1,14 +1,28 @@
 import React from 'react';
+import Home_Bttn from './components/home-bttn';
+
 // import api from '../../services/api';
 
-import { Container } from './styles';
+import { Container, Wrapper } from './styles';
 
 
 function Home(){
 
   return(
     <Container>
-      <p>AÇOUGUE</p>
+      <Wrapper>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+      </Wrapper>
     </Container>
   );
 }
