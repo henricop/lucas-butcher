@@ -4,6 +4,7 @@ import { Route, Routes as MainRoutes } from "react-router-dom";
 import Cliente from './pages/Cliente';
 import Home from './pages/Home';
 import Vendas from './pages/Vendas';
+import HistoricoVendas from './pages/HistoricoVendas';
 
 export default function Routes(){
   return(
@@ -12,6 +13,7 @@ export default function Routes(){
         <Route path="/vendas" element={<Vendas />} />
         <Route path="/produtos" element={<Vendas />} />
         <Route path="/cliente" element={<Cliente />} />
+        <Route path="/historico-vendas" element={<HistoricoVendas />} />
     </MainRoutes>
   );
 }

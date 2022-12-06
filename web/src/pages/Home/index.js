@@ -36,7 +36,7 @@ function Home(){
             <BsFillPersonPlusFill/>
             <p>Cadastro de Fornecedores</p>
           </CardItem>
-          <CardItem>
+          <CardItem  onClick={() => window?.location.assign("/historico-vendas") }>
             <BsCashCoin/>
             <p>Histórico de Vendas</p>
           </CardItem>
