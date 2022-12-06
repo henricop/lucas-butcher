@@ -3,6 +3,7 @@ import { Route, Routes as MainRoutes } from "react-router-dom";
 
 import Home from './pages/Home';
 import Vendas from './pages/Vendas';
+import Empresas from './pages/Empresas';
 
 export default function Routes(){
   return(
@@ -10,6 +11,7 @@ export default function Routes(){
         <Route path="/" element={<Home />} />
         <Route path="/vendas" element={<Vendas />} />
         <Route path="/produtos" element={<Vendas />} />
+        <Route path="/empresas" element={<Empresas />} />
     </MainRoutes>
   );
 }

@@ -11,7 +11,7 @@ function Home(){
   return(
     <Container>
       <Wrapper>
-        <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
+        <Home_Bttn path="/empresas" title="Empresas"/>
         <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
         <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
         <Home_Bttn path="/vendas" title="Histórico de Vendas"/>
