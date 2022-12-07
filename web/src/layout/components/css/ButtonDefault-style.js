@@ -17,7 +17,6 @@ export const ButtonDefault = styled.button`
         transform: scale(1.05);
         cursor: pointer;
     }
-
 `;
 
 ButtonDefault.defaultProps = {
