@@ -5,6 +5,7 @@ import Cliente from './pages/Cliente';
 import Home from './pages/Home';
 import Vendas from './pages/Vendas';
 import HistoricoVendas from './pages/HistoricoVendas';
+import CadastroProdutos from './pages/CadastroProdutos';
 
 export default function Routes(){
   return(
@@ -14,6 +15,7 @@ export default function Routes(){
         <Route path="/produtos" element={<Vendas />} />
         <Route path="/cliente" element={<Cliente />} />
         <Route path="/historico-vendas" element={<HistoricoVendas />} />
+        <Route path="/cadastro-produtos" element={<CadastroProdutos />} />
     </MainRoutes>
   );
 }

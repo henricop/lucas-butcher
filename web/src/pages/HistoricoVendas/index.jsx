@@ -1,8 +1,8 @@
 import api from '../../services/api';
-
+import {Component} from 'react';
 import { Container, MyButton, TextBox } from './styles';
 
-class HistoricoVendas extends React.Component{
+class HistoricoVendas extends Component{
 
   constructor(props){
     super(props);
