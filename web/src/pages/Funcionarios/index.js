@@ -1,21 +1,24 @@
-import React, { useEffect } from 'react';
 import ButtonDefault from '../../layout/components/ButtonDefault';
 import Input from '../../layout/components/Input';
+import InputSelect from '../../layout/components/InputSelect';
 
 import { Container } from './styles';
 
 
-function Clientes(){
+function Funcionarios(){
+  const options = [{"id": 1, "name": "Administrador"}, {"id": 2, "name": "Funcionario"}];
+
   return(
     <Container>
       <div className='wrapper'>
-        <h1>Cadastro de Clientes</h1>
+        <h1>Cadastro de Funcionarios</h1>
         <section className='input-section'>
           <Input type="text" width="540px" title="Nome Completo" placeholder="Nome completo do cliente"/>
           <p className='breaker'/>
-          <Input type="text" width="380px" title="CPF/CNPJ" placeholder="CPF/CNPJ"/>
+          <Input type="text" width="380px" title="CPF" placeholder="CPF"/>
           <Input type="email" width="380px" title="Email" placeholder="johndoe@example.com"/>
           <Input type="text" width="380px" title="Telefone" placeholder="(xx) xxxx-xxxx"/>
+          <InputSelect width="380px" title="Nivel" name="nivel" id="nivel" options={options}/>
         </section>
 
         <div className='divisor'></div>
@@ -36,4 +39,4 @@ function Clientes(){
   );
 }
 
-export default Clientes;
+export default Funcionarios;

@@ -13,9 +13,12 @@ export const Container = styled.div`
         font-size: 16px;
     }
 
-    input{
-        width: 100%;
+    select{
+        background-color: #FFF;
         height: 36px;
+        border: none;
+        border: 1px solid #8f8f9d;
+        border-radius: 2px;
         box-sizing: border-box;
         padding-left: 10px;
     }

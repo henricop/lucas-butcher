@@ -13,7 +13,7 @@ function Home(){
       <Wrapper>
         <HomeBttn path="/empresas" title="Empresas"/>
         <HomeBttn path="/clientes" title="Cadastro de clientes"/>
-        <HomeBttn path="/vendas" title="Histórico de Vendas"/>
+        <HomeBttn path="/funcionarios" title="Cadastro de funcionarios"/>
         <HomeBttn path="/vendas" title="Histórico de Vendas"/>
         <HomeBttn path="/vendas" title="Histórico de Vendas"/>
         <HomeBttn path="/vendas" title="Histórico de Vendas"/>

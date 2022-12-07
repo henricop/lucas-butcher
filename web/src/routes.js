@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Vendas from './pages/Vendas';
 import Empresas from './pages/Empresas';
 import Clientes from './pages/Clientes'
+import Funcionarios from './pages/Funcionarios';
 
 export default function Routes(){
   return(
@@ -14,6 +15,7 @@ export default function Routes(){
         <Route path="/produtos" element={<Vendas />} />
         <Route path="/empresas" element={<Empresas />} />
         <Route path="/clientes" element={<Clientes />} />
+        <Route path="/funcionarios" element={<Funcionarios />} />
     </MainRoutes>
   );
 }

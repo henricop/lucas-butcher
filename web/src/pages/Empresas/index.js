@@ -1,20 +1,11 @@
 import React, { useEffect } from 'react';
 import ButtonDefault from '../../layout/components/ButtonDefault';
 import Input from '../../layout/components/Input';
-import api from '../../services/api';
 
 import { Container } from './styles';
 
 
-function Vendas(){
-
-  useEffect(() => {
-    api.get("/vendas")
-    .then(res => console.log(res.data) )
-    .catch(err => console.log("Error: ", err))
-  },[])
-
-
+function Empresas(){
   return(
     <Container>
       <div className='wrapper'>
@@ -46,4 +37,4 @@ function Vendas(){
   );
 }
 
-export default Vendas;
+export default Empresas;
