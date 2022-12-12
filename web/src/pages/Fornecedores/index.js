@@ -1,24 +1,22 @@
+import React, { useEffect } from 'react';
 import ButtonDefault from '../../layout/components/ButtonDefault';
 import Input from '../../layout/components/Input';
-import InputSelect from '../../layout/components/InputSelect';
 
 import { Container } from './styles';
 
 
-function Funcionarios(){
-  const options = [{"id": 1, "name": "Administrador"}, {"id": 2, "name": "Funcionario"}];
-
+function Fornecedores(){
   return(
     <Container>
       <div className='wrapper'>
-        <h1>Cadastro de Funcionarios</h1>
+        <h1>Cadastro de Fornecedores</h1>
         <section className='input-section'>
-          <Input type="text" width="540px" title="Nome Completo" placeholder="Nome completo do cliente"/>
+          <Input type="text" width="540px" title="Nome" placeholder="Nome do Fornecedor"/>
           <p className='breaker'/>
-          <Input type="text" width="380px" title="CPF" placeholder="CPF"/>
+          <Input type="text" width="380px" title="CNPJ" placeholder="CNPJ"/>
+          <Input type="text" width="380px" title="Inscrição Estadual" placeholder="Inscrição Estadual"/>
           <Input type="email" width="380px" title="Email" placeholder="johndoe@example.com"/>
           <Input type="text" width="380px" title="Telefone" placeholder="(xx) xxxx-xxxx"/>
-          <InputSelect width="380px" title="Nivel" name="nivel" id="nivel" options={options}/>
         </section>
 
         <div className='divisor'></div>
@@ -33,10 +31,10 @@ function Funcionarios(){
           <Input type="text" width="540px" title="Cidade" placeholder="Cidade"/>
           <Input type="text" width="380px" title="Bairro" placeholder="Bairro"/>
         </section>
-        <ButtonDefault text="Registrar Funcionário" width="200px" margin="50px 0px"/>
+        <ButtonDefault text="Registrar Fornecedor" width="200px" margin="50px 0px"/>
       </div>
     </Container>
   );
 }
 
-export default Funcionarios;
+export default Fornecedores;
