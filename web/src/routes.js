@@ -8,6 +8,7 @@ import Clientes from './pages/Clientes'
 import Funcionarios from './pages/Funcionarios';
 import Fornecedores from './pages/Fornecedores';
 import Encomendas from './pages/Encomendas';
+import Lote from './pages/Lote';
 
 export default function Routes(){
   return(
@@ -20,6 +21,7 @@ export default function Routes(){
         <Route path="/funcionarios" element={<Funcionarios />} />
         <Route path="/fornecedores" element={<Fornecedores />} />
         <Route path="/encomendas" element={<Encomendas />} />
+        <Route path="/lote" element={<Lote />} />
     </MainRoutes>
   );
 }

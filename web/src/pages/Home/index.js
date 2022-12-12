@@ -16,7 +16,7 @@ function Home(){
         <HomeBttn path="/funcionarios" title="Cadastro de funcionarios"/>
         <HomeBttn path="/fornecedores" title="Cadastro de fornecedores"/>
         <HomeBttn path="/encomendas" title="Cadastro de encomendas"/>
-        <HomeBttn path="/vendas" title="Histórico de Vendas"/>
+        <HomeBttn path="/lote" title="Compra por Lote"/>
         <HomeBttn path="/vendas" title="Histórico de Vendas"/>
         <HomeBttn path="/vendas" title="Histórico de Vendas"/>
         <HomeBttn path="/vendas" title="Histórico de Vendas"/>
