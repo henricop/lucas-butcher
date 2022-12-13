@@ -8,15 +8,17 @@ import { Container } from './styles';
 const NavBar = () => {
   return (
     <Container>
-      <section>
-        <time>{currentDate()}</time>
-        {/* <time>{new Date()}</time> */}
-        <span>Henrico Piubello</span>
-      </section>
-      <div>
-        <HiOutlineBellAlert/>
-        <CiLogout/>
-      </div>
+      <main>
+        <section>
+          <time>{currentDate()}</time>
+          {/* <time>{new Date()}</time> */}
+          <span>Henrico Piubello</span>
+        </section>
+        <div>
+          <HiOutlineBellAlert/>
+          <CiLogout/>
+        </div>
+      </main>
     </Container>
   );
 }
