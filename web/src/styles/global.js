@@ -7,6 +7,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     outline: none;
     border: none;
+    font-family: 'Roboto', sans-serif!important;
   }
 
   p, h1, h2, h3, h4, h4 {
@@ -17,6 +18,10 @@ export default createGlobalStyle`
   html, body, #root {
     width: 100%;
   }
+  input, button {
+    font-family: 'Roboto', sans-serif!important;
+  }
+  
 
   :root {
     font-size: 14px;

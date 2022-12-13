@@ -4,6 +4,7 @@ import { TemplateContent } from '../../Components/Layout';
 export const Container = styled.div`
   width: 100%;
   height: 200px;
+  max-width: 1100px;
 `;
 
 export const TemplateContentStyle = styled(TemplateContent)`
@@ -12,7 +13,11 @@ export const TemplateContentStyle = styled(TemplateContent)`
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  `;
+  @media(max-width: 1300px){
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+
+  }
+`;
 
 export const CardItem = styled.div`
   width: 250px;
@@ -40,6 +45,14 @@ export const CardItem = styled.div`
   svg {
     font-size: 46px;
     color: #222;
+  }
+  @media(max-width: 1300px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media(max-width: 900px) {
+    width: 150px;
+    height: 150px;
   }
   
 `;

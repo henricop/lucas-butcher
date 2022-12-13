@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from './Components/Navbar';
 import Routes from './routes';
-import "./styles/global";
+import GlobalStyle from "./styles/global";
 
 
 
@@ -10,6 +10,7 @@ function App() {
     <>
     <NavBar/>
     <Routes/>
+    <GlobalStyle/>
     </>
   );
 }
