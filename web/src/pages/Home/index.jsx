@@ -46,7 +46,7 @@ function Home() {
             <BsFillJournalBookmarkFill />
             <p>Encomendas</p>
           </CardItem>
-          <CardItem>
+          <CardItem onClick={() => window?.location.assign("/cadastro-produtos") }>
             <FiShoppingCart />
             <p>Produtos</p>
           </CardItem>
