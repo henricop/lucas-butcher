@@ -18,6 +18,8 @@ export const Container = styled.div`
         height: 36px;
         box-sizing: border-box;
         padding-left: 10px;
+        border: 1px solid #8f8f9d;
+        border-radius: 2px;
     }
 `;
 

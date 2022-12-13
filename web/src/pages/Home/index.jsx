@@ -22,28 +22,28 @@ function Home() {
             <FaCashRegister />
             <p>Caixa</p>
           </CardItem>
-          <CardItem>
-            <FaStoreAlt />
+          <CardItem onClick={() => window?.location.assign("/empresas")}>
+            <FaStoreAlt/>
             <p>Cadastro de Empresas</p>
           </CardItem>
-          <CardItem>
-            <GrUserWorker />
+          <CardItem onClick={() => window?.location.assign("/funcionarios")}>
+            <GrUserWorker/>
             <p>Cadastro de Funcionários</p>
           </CardItem>
-          <CardItem onClick={() => window?.location.assign("/cliente")}>
+          <CardItem onClick={() => window?.location.assign("/clientes")}>
             <IoIosPeople />
             <p>Cadastro de Clientes</p>
           </CardItem>
-          <CardItem>
-            <BsFillPersonPlusFill />
+          <CardItem onClick={() => window?.location.assign("/fornecedores")}>
+            <BsFillPersonPlusFill/>
             <p>Cadastro de Fornecedores</p>
           </CardItem>
           <CardItem>
             <BsCashCoin />
             <p>Histórico de Vendas</p>
           </CardItem>
-          <CardItem>
-            <BsFillJournalBookmarkFill />
+          <CardItem onClick={() => window?.location.assign("/encomendas")}>
+            <BsFillJournalBookmarkFill/>
             <p>Encomendas</p>
           </CardItem>
           <CardItem>
