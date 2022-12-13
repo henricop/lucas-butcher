@@ -2,12 +2,6 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100%;
-  
-  display:flex;
-  justify-content: center;
-  
   p {
     color: #000;
   }
@@ -52,5 +46,20 @@ export const Container = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .flex-row{
+      flex-direction: column;
+    }
+    
+    .divisor{
+      align-self: center;
+      width: 66%;
+      background-color: #707070;
+      height: 1px;
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
   }
 `;
