@@ -52,7 +52,7 @@ function Home(){
             <BsFillBookmarkStarFill/>
             <p>Cadastro de promoção</p>
           </CardItem>
-          <CardItem>
+          <CardItem  onClick={() => window?.location.assign("/devolucao") }>
             <MdOutlineSettingsBackupRestore/>
             <p>Devolução</p>
           </CardItem>

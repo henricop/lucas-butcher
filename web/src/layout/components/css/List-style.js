@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
     width: ${props => props.width};
+    height: auto;
 
     .title{
         margin: 0;
@@ -11,13 +10,18 @@ export const Container = styled.div`
         margin-top: 16px;
         margin-bottom: 16px;
         font-size: 16px;
+        
     }
 
-    input{
-        width: 100%;
-        height: ${props => props.height? props.height : "36px"};
-        box-sizing: border-box;
-        padding-left: 10px;
+    .list-container{
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        overflow-y: scroll;
+        max-height: 250px;
+        height: auto;
+        border: 1px solid #8f8f9d;
+        border-radius: 2px;
     }
 `;
 

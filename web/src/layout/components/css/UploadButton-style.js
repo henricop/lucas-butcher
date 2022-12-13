@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import UploadButton from "../UploadButton";
 
 export const Container = styled.div`
 
