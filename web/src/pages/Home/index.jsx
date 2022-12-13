@@ -1,5 +1,7 @@
 import React from 'react';
+
 // import api from '../../services/api';
+
 import { BsCashCoin, BsFillBookmarkStarFill, BsFillJournalBookmarkFill, BsFillPersonPlusFill, BsTrash } from 'react-icons/bs';
 import { FaCashRegister, FaStoreAlt } from 'react-icons/fa';
 import { FiShoppingCart } from 'react-icons/fi';

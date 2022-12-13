@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { TemplateContent } from '../../Components/Layout';
 
+
 export const Container = styled.div`
   width: 100%;
   height: 200px;
@@ -14,7 +15,6 @@ export const TemplateContentStyle = styled(TemplateContent)`
   justify-items:center;
   @media(max-width: 1300px){
     grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
-
   }
 `;
 
