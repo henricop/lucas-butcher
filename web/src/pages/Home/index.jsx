@@ -30,7 +30,7 @@ function Home() {
             <GrUserWorker />
             <p>Cadastro de Funcionários</p>
           </CardItem>
-          <CardItem onClick={() => window?.location.assign("/cliente")}>
+          <CardItem>
             <IoIosPeople />
             <p>Cadastro de Clientes</p>
           </CardItem>
