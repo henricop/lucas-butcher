@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import ButtonDefault from '../../layout/components/ButtonDefault';
 import Input from '../../layout/components/Input';
 

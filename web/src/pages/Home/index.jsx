@@ -12,54 +12,54 @@ import { Section } from '../../Components/Layout';
 import { CardItem, Container, TemplateContentStyle } from './styles';
 
 
-function Home(){
+function Home() {
 
-  return(
+  return (
     <Container>
       <Section>
         <TemplateContentStyle>
           <CardItem>
-            <FaCashRegister/>
+            <FaCashRegister />
             <p>Caixa</p>
           </CardItem>
           <CardItem>
-            <FaStoreAlt/>
+            <FaStoreAlt />
             <p>Cadastro de Empresas</p>
           </CardItem>
           <CardItem>
-            <GrUserWorker/>
+            <GrUserWorker />
             <p>Cadastro de Funcionários</p>
           </CardItem>
-          <CardItem onClick={() => window?.location.assign("/cliente") }>
-            <IoIosPeople/>
+          <CardItem onClick={() => window?.location.assign("/cliente")}>
+            <IoIosPeople />
             <p>Cadastro de Clientes</p>
           </CardItem>
           <CardItem>
-            <BsFillPersonPlusFill/>
+            <BsFillPersonPlusFill />
             <p>Cadastro de Fornecedores</p>
           </CardItem>
           <CardItem>
-            <BsCashCoin/>
+            <BsCashCoin />
             <p>Histórico de Vendas</p>
           </CardItem>
           <CardItem>
-            <BsFillJournalBookmarkFill/>
+            <BsFillJournalBookmarkFill />
             <p>Encomendas</p>
           </CardItem>
           <CardItem>
-            <FiShoppingCart/>
+            <FiShoppingCart />
             <p>Produtos</p>
           </CardItem>
-          <CardItem>
-            <BsFillBookmarkStarFill/>
+          <CardItem onClick={() => window?.location.assign("/promocoes")}>
+            <BsFillBookmarkStarFill />
             <p>Cadastro de promoção</p>
           </CardItem>
           <CardItem>
-            <MdOutlineSettingsBackupRestore/>
+            <MdOutlineSettingsBackupRestore />
             <p>Devolução</p>
           </CardItem>
           <CardItem>
-            <BsTrash/>
+            <BsTrash />
             <p>Perda de Produto</p>
           </CardItem>
         </TemplateContentStyle>

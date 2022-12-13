@@ -45,4 +45,13 @@ export const CardItem = styled.div`
     font-size: 46px;
     color: #222;
   }
+  @media(max-width: 1300px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media(max-width: 900px) {
+    width: 150px;
+    height: 150px;
+  }
+  
 `;
