@@ -1,19 +1,48 @@
 import styled from 'styled-components';
+import { TemplateContent } from '../../Components/Layout';
+
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
-  max-height: 720px;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  height: 200px;
 `;
 
-export const Wrapper = styled.div`
-  display:flex;
-  justify-content: center;
-  align-items: center;
+export const TemplateContentStyle = styled(TemplateContent)`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
   flex-wrap: wrap;
-  column-gap: 60px;
-  max-width: 1280px;
-  width: 100%;
+  gap: 20px;
+  justify-items:center;
+  @media(max-width: 1300px){
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+  }
+`;
+
+export const CardItem = styled.div`
+  width: 250px;
+  height: 250px;
+  background: #D9D9D9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  align-self: center;
+  transition: var(--transition);
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19px;
+    text-align: center;
+    color: #222;
+  }
+  svg {
+    font-size: 46px;
+    color: #222;
+  }
 `;

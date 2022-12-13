@@ -1,12 +1,16 @@
 import React from 'react';
-import './Global.css';
+import NavBar from './Components/Navbar';
 import Routes from './routes';
+import "./styles/global";
 
 
 
 function App() {
   return (
+    <>
+    <NavBar/>
     <Routes/>
+    </>
   );
 }
 

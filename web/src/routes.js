@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes as MainRoutes } from "react-router-dom";
 
+import Cliente from './pages/Cliente';
 import Home from './pages/Home';
 import Vendas from './pages/Vendas';
 import Empresas from './pages/Empresas';
@@ -22,6 +23,7 @@ export default function Routes(){
         <Route path="/fornecedores" element={<Fornecedores />} />
         <Route path="/encomendas" element={<Encomendas />} />
         <Route path="/lote" element={<Lote />} />
+        <Route path="/cliente" element={<Cliente />} />
     </MainRoutes>
   );
 }

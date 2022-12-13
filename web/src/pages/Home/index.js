@@ -1,28 +1,69 @@
 import React from 'react';
-import HomeBttn from './components/HomeBttn';
 
 // import api from '../../services/api';
 
-import { Container, Wrapper } from './styles';
+import { BsCashCoin, BsFillBookmarkStarFill, BsFillJournalBookmarkFill, BsFillPersonPlusFill, BsTrash } from 'react-icons/bs';
+import { FaCashRegister, FaStoreAlt } from 'react-icons/fa';
+import { FiShoppingCart } from 'react-icons/fi';
+import { GrUserWorker } from 'react-icons/gr';
+import { IoIosPeople } from 'react-icons/io';
+import { MdOutlineSettingsBackupRestore } from 'react-icons/md';
+import { Section } from '../../Components/Layout';
+import { CardItem, Container, TemplateContentStyle } from './styles';
 
 
 function Home(){
 
   return(
     <Container>
-      <Wrapper>
-        <HomeBttn path="/empresas" title="Empresas"/>
-        <HomeBttn path="/clientes" title="Cadastro de clientes"/>
-        <HomeBttn path="/funcionarios" title="Cadastro de funcionarios"/>
-        <HomeBttn path="/fornecedores" title="Cadastro de fornecedores"/>
-        <HomeBttn path="/encomendas" title="Cadastro de encomendas"/>
-        <HomeBttn path="/lote" title="Compra por Lote"/>
-        <HomeBttn path="/vendas" title="Histórico de Vendas"/>
-        <HomeBttn path="/vendas" title="Histórico de Vendas"/>
-        <HomeBttn path="/vendas" title="Histórico de Vendas"/>
-        <HomeBttn path="/vendas" title="Histórico de Vendas"/>
-        <HomeBttn path="/vendas" title="Histórico de Vendas"/>
-      </Wrapper>
+      <Section>
+        <TemplateContentStyle>
+          <CardItem>
+            <FaCashRegister/>
+            <p>Caixa</p>
+          </CardItem>
+          <CardItem>
+            <FaStoreAlt/>
+            <p>Cadastro de Empresas</p>
+          </CardItem>
+          <CardItem>
+            <GrUserWorker/>
+            <p>Cadastro de Funcionários</p>
+          </CardItem>
+          <CardItem onClick={() => window?.location.assign("/cliente") }>
+            <IoIosPeople/>
+            <p>Cadastro de Clientes</p>
+          </CardItem>
+          <CardItem>
+            <BsFillPersonPlusFill/>
+            <p>Cadastro de Fornecedores</p>
+          </CardItem>
+          <CardItem>
+            <BsCashCoin/>
+            <p>Histórico de Vendas</p>
+          </CardItem>
+          <CardItem>
+            <BsFillJournalBookmarkFill/>
+            <p>Encomendas</p>
+          </CardItem>
+          <CardItem>
+            <FiShoppingCart/>
+            <p>Produtos</p>
+          </CardItem>
+          <CardItem>
+            <BsFillBookmarkStarFill/>
+            <p>Cadastro de promoção</p>
+          </CardItem>
+          <CardItem>
+            <MdOutlineSettingsBackupRestore/>
+            <p>Devolução</p>
+          </CardItem>
+          <CardItem>
+            <BsTrash/>
+            <p>Perda de Produto</p>
+          </CardItem>
+        </TemplateContentStyle>
+      </Section>
     </Container>
   );
 }
