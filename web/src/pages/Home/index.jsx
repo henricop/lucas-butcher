@@ -38,15 +38,15 @@ function Home() {
             <BsFillPersonPlusFill/>
             <p>Cadastro de Fornecedores</p>
           </CardItem>
-          <CardItem>
-            <BsCashCoin />
+          <CardItem  onClick={() => window?.location.assign("/historico-vendas") }>
+            <BsCashCoin/>
             <p>Histórico de Vendas</p>
           </CardItem>
           <CardItem onClick={() => window?.location.assign("/encomendas")}>
             <BsFillJournalBookmarkFill/>
             <p>Encomendas</p>
           </CardItem>
-          <CardItem>
+          <CardItem onClick={() => window?.location.assign("/cadastro-produtos") }>
             <FiShoppingCart />
             <p>Produtos</p>
           </CardItem>
@@ -54,8 +54,8 @@ function Home() {
             <BsFillBookmarkStarFill />
             <p>Cadastro de promoção</p>
           </CardItem>
-          <CardItem>
-            <MdOutlineSettingsBackupRestore />
+          <CardItem  onClick={() => window?.location.assign("/devolucao") }>
+            <MdOutlineSettingsBackupRestore/>
             <p>Devolução</p>
           </CardItem>
           <CardItem>

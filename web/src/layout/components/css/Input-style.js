@@ -15,7 +15,7 @@ export const Container = styled.div`
 
     input{
         width: 100%;
-        height: 36px;
+        height: ${props => props.height? props.height : "36px"};
         box-sizing: border-box;
         padding-left: 10px;
         border: 1px solid #8f8f9d;
