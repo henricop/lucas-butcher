@@ -9,6 +9,8 @@ import Fornecedores from './pages/Fornecedores';
 import Encomendas from './pages/Encomendas';
 import Lote from './pages/Lote';
 import Promocoes from './pages/Promocoes';
+import CadastroProdutos from './pages/CadastroProdutos';
+import Devolucao from './pages/Devolucao';
 
 export default function Routes(){
   return(
@@ -21,6 +23,8 @@ export default function Routes(){
         <Route path="/encomendas" element={<Encomendas />} />
         <Route path="/lote" element={<Lote />} />
         <Route path="/promocoes" element={<Promocoes />} />
+        <Route path="/cadastro-produtos" element={<CadastroProdutos />} />
+        <Route path="/devolucao" element={<Devolucao />} />
     </MainRoutes>
   );
 }
