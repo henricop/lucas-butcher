@@ -1,4 +1,4 @@
-import {Container} from './css/List-style'
+import {Container} from './List-style'
 import ListItem from './ListItem'
 
 function List(props){

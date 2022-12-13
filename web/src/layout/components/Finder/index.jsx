@@ -1,4 +1,4 @@
-import {Container} from './css/Finder-style'
+import {Container} from './Finder-style'
 
 function Finder(props){
        return(        

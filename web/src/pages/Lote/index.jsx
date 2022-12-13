@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import ButtonDefault from '../../layout/components/ButtonDefault';
 import Finder from '../../layout/components/Finder';
 import Input from '../../layout/components/Input';
-import List from '../../layout/components/List';
+import List from '../../layout/components/Forms/List';
 
 import { Container } from './styles';
 

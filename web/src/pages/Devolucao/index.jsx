@@ -1,7 +1,7 @@
 import ButtonDefault from '../../layout/components/ButtonDefault';
 import Input from '../../layout/components/Input';
 import Finder from '../../layout/components/Finder'
-import List from '../../layout/components/List';
+import List from '../../layout/components/Forms/List';
 
 import { Container } from './styles';
 
