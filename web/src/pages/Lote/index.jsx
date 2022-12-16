@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
-import ButtonDefault from '../../layout/components/ButtonDefault/ButtonDefault';
-import Finder from '../../layout/components/Finder/Finder';
+import ButtonDefault from '../../layout/components/ButtonDefault';
+import Finder from '../../layout/components/Finder';
 import Input from '../../layout/components/Input';
 import List from '../../layout/components/Forms/List';
 

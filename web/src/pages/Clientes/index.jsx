@@ -1,5 +1,5 @@
 import { Section, TemplateContent } from '../../Components/Layout';
-import ButtonDefault from '../../layout/components/ButtonDefault/ButtonDefault';
+import ButtonDefault from '../../layout/components/ButtonDefault';
 import Input from '../../layout/components/Input';
 
 import { Container } from './styles';
