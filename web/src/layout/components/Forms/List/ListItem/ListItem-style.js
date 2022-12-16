@@ -5,7 +5,7 @@ export const Container = styled.div`
     margin: 0;
     display: flex;
     height: 36px;
-    width: ${props => props.width};
+    width: inherit;
     box-sizing: border-box;
     border-bottom: 1px solid #8f8f9d;
     align-items: center;
@@ -16,7 +16,7 @@ export const Container = styled.div`
     }
 
     .name{
-        width: 35%;
+        width: 45%;
         text-align: left;
         color: #8f8f9d;
     }
@@ -27,7 +27,7 @@ export const Container = styled.div`
     }
 
     .value{
-        width: 30%;
+        width: 25%;
         color: #8f8f9d;
     }
 

@@ -1,4 +1,4 @@
-import { Container } from './css/InputSelect-style'
+import { Container } from './InputSelect-style'
 
 function InputSelect(props){
     return(

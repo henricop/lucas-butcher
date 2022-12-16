@@ -18,6 +18,7 @@ export default createGlobalStyle`
   html, body, #root {
     width: 100%;
   }
+
   input, button {
     font-family: 'Roboto', sans-serif!important;
   }
