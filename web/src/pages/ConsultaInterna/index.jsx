@@ -32,7 +32,7 @@ function ConsultaInterna(){
               <InputSelect width="200px" title="Tipo" name="tipo" id="tipo" options={options}/>
               <ButtonDefault text="Buscar" width="200px" margin="50px 0px"/>
             </section>
-            <UserList titles={tableHead} cellwidth="200px" items={tableItems}/>
+            <UserList titles={tableHead} itemKeys={['type', 'email', 'cpf', 'phone', 'register_date']} cellwidth="200px" items={tableItems}/>
           </div>
         </Container>
       </TemplateContent>
