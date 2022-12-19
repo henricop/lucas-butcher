@@ -12,7 +12,8 @@ import Lote from './pages/Lote';
 import Promocoes from './pages/Promocoes';
 import CadastroProdutos from './pages/CadastroProdutos';
 import Devolucao from './pages/Devolucao';
-//import ConsultaEncomendas from './pages/ConsultaEncomendas';
+import ConsultaEncomendas from './pages/ConsultaEncomendas';
+import ConsultaProdutos from './pages/ConsultaProdutos';
 
 export default function Routes(){
   return(
@@ -28,7 +29,8 @@ export default function Routes(){
         <Route path="/promocoes" element={<Promocoes />} />
         <Route path="/cadastro-produtos" element={<CadastroProdutos />} />
         <Route path="/devolucao" element={<Devolucao />} />
-        {/* <Route path="/consulta-encomendas" element={<ConsultaEncomendas />} /> */}
+        <Route path="/consulta-encomendas" element={<ConsultaEncomendas />} />
+        <Route path="/consulta-produtos" element={<ConsultaProdutos />} />
     </MainRoutes>
   );
 }
