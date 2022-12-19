@@ -6,10 +6,8 @@ function UserList(props){
 
     function setKeys(object){
         var itemInfo = [];
-        let index = 0;
         itemKeys.forEach(element => {
             itemInfo.push(object[element]);
-            index++;
         });
         return itemInfo;
     }
@@ -37,9 +35,9 @@ function UserList(props){
                         props.items.map((element) =>{
                             console.log(Object.keys(element).length)
                             return (<TableItem 
-                                key={element.id} 
-                                name={element.name} 
-                                id={element.id} 
+                                key={element[props.id]} 
+                                name={element[props.name]} 
+                                id={element[props.id]} 
                                 itemInfo={setKeys(element)} 
                                 cells={props.titles.length}/>)
                         })
