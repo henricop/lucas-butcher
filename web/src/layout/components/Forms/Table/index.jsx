@@ -2,6 +2,18 @@ import { Container } from './Table-style'
 import TableItem from './TableItem';
 
 function UserList(props){
+    const itemKeys = props.itemKeys;
+
+    function setKeys(object){
+        var itemInfo = [];
+        let index = 0;
+        itemKeys.forEach(element => {
+            itemInfo.push(object[element]);
+            index++;
+        });
+        return itemInfo;
+    }
+
     return(
         <Container cellwidth={props.cellwidth}>
             <table>
@@ -28,7 +40,7 @@ function UserList(props){
                                 key={element.id} 
                                 name={element.name} 
                                 id={element.id} 
-                                itemInfo={[element.type, element.email, element.cpf, element.phone, element.register_date]} 
+                                itemInfo={setKeys(element)} 
                                 cells={props.titles.length}/>)
                         })
                     }       
