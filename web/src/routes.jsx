@@ -13,6 +13,7 @@ import Promocoes from './pages/Promocoes';
 import CadastroProdutos from './pages/CadastroProdutos';
 import Devolucao from './pages/Devolucao';
 import ConsultaEncomendas from './pages/ConsultaEncomendas';
+//import ConsultaEncomendas from './pages/ConsultaEncomendas';
 
 export default function Routes(){
   return(
