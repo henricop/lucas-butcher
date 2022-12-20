@@ -1,4 +1,4 @@
-import { Container } from './css/UploadButton-style'
+import { Container } from './UploadButton-style'
 
 function UploadButton(props){
     return(
