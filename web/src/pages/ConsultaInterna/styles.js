@@ -38,3 +38,9 @@ export const Container = styled.div`
     width: 100%;
   }
 `;
+export const TitleNotExist = styled.span`
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 auto;
+  
+`;

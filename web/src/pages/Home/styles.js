@@ -8,14 +8,13 @@ export const Container = styled.div`
 `;
 
 export const TemplateContentStyle = styled(TemplateContent)`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 250px));
-  flex-wrap: wrap;
-  gap: 20px;
+  display: flex;
+  justify-content:center;
+  align-items:center;
   justify-items:center;
-  @media(max-width: 1300px){
-    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
-  }
+  max-width: 1400px;
+  flex-wrap: wrap;
+  gap:20px;
 `;
 
 export const CardItem = styled.div`
