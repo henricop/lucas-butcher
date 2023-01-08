@@ -11,6 +11,7 @@ export const ButtonDefault = styled.button`
     font-size: 16px;
     font-weight: 500;
     float: right;
+    padding: 2px;
 
     &:hover{
         transition-duration: 0.2s;
