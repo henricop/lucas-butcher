@@ -2,6 +2,7 @@ import React from 'react';
 import InputGeneral from '../../Components/General/Input/InputGeneral';
 import ListaItems from '../../Components/List/ListaItems';
 // import api from '../../services/api';
+import GoBack from '../../Components/Buttons/GoBack';
 import InputWithButton from '../../Components/General/Input/InputWithButton';
 import { Section, TemplateContent } from '../../Components/Layout';
 import { Container, TemplateContentSection, TemplateContentSectionFinal, TemplateContentStyle } from './styles';
@@ -14,6 +15,7 @@ const Promocoes = () => {
     <Container>
       <Section>
         <TemplateContentStyle>
+          <GoBack />
           <h1>Cadastrar Promoção</h1>
           <section>
             <div>
