@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  tr>td:last-child {
-    width: 10%;
+  tfoot > tr > td {
+    color: red;
   }
 `
 

@@ -47,7 +47,6 @@ function Home() {
 
 
   return (
-    <>
       <Container>
         <Section>
           <TemplateContentStyle>
@@ -114,6 +113,3 @@ function Home() {
       </Modal>
     </>
   );
-}
-
-export default Home;

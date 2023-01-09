@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  tr>td:last-child {
-    width: 10%;
+  tfoot > tr > td {
+    color: red;
   }
 `
 
@@ -21,9 +21,27 @@ export const Tools = styled.div`
     padding-bottom: 5px;
   }
 
+  div {
+    width: fit-content;
+  }
+
   h1 {
     width: 100%;
     padding-bottom: 20px;
   }
 
+  select {
+    height: 100%;
+  }
+
+  label {
+    padding-right: 10px;
+  }
+
+`
+
+export const Select = styled.select`
+    border-style: solid;
+    border-radius: 4px;
+    border-width: 1px;
 `

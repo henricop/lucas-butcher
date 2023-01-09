@@ -1,10 +1,10 @@
 import { Container } from './Input-style'
 
-function Input(props){
+function Input({width, height, title, type, placeholder}){
     return(
-        <Container width={props.width} height={props.height}>
-            <h1 className='title'>{props.title}</h1>
-            <input type={props.type} placeholder={props.placeholder}/>
+        <Container width={width} height={height}>
+            <h1 className='title'>{title}</h1>
+            <input type={type} placeholder={placeholder}/>
         </Container>
     )
 }

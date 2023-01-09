@@ -14,6 +14,8 @@ import Fornecedores from './pages/Fornecedores';
 import Funcionarios from './pages/Funcionarios';
 import HistoricoVendas from './pages/HIstoricoVendas';
 import HistoricoVendasDetalhesPlaceHolder from './pages/HIstoricoVendas/details';
+import HistoricoLotes from './pages/HistoricoLotes';
+import HistoricoPerdas from './pages/HistoricoPerdas';
 import Home from './pages/Home';
 import Lote from './pages/Lote';
 import Promocoes from './pages/Promocoes';
@@ -37,6 +39,8 @@ export default function Routes() {
       <Route path="/caixa" element={<Caixa />} />
       <Route path="/historico-vendas" element={<HistoricoVendas />} />
       <Route path="/historico-vendas-detalhes" element={<HistoricoVendasDetalhesPlaceHolder />} />
+      <Route path="/historico-perdas" element={<HistoricoPerdas />} />
+      <Route path="/historico-lotes" element={<HistoricoLotes />} />
     </MainRoutes>
   );
 }

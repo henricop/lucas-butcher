@@ -15,7 +15,7 @@ function Lote() {
         <Container>
           <div className='wrapper'>
             <GoBack />
-            <h1>Cadastro de Clientes</h1>
+            <h1>Cadastro de Lotes</h1>
             <section className='input-section'>
               <Finder type="text" title="Produto" width="400px" placeholder="Código ou nome do produto" />
               <Input type="text" width="200px" title="Preço" placeholder="R$ 0,00" />

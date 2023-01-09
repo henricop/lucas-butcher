@@ -37,4 +37,14 @@ export const Container = styled.div`
     padding: 0;
     width: 100%;
   }
+
+  .title-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buttons-container > button{
+    margin-left: 20px;
+  }
 `;
