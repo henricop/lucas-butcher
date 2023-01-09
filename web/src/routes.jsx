@@ -17,7 +17,7 @@ import HistoricoVendasDetalhesPlaceHolder from './pages/HistoricoVendas/details'
 import HistoricoPerdas from './pages/HistoricoPerdas';
 import HistoricoLotes from './pages/HistoricoLotes';
 import ConsultaEncomendas from './pages/ConsultaEncomendas';
-import ConsultaProdutos from './pages/ConsultaProdutos';
+import ConsultaProdutos from './pages/ConsultaProdutos';;
 
 export default function Routes(){
   return(

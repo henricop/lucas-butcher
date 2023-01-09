@@ -46,11 +46,11 @@ function Home() {
             <BsCashCoin/>
             <p>Histórico de Vendas</p>
           </CardItem>
-          <CardItem onClick={() => window?.location.assign("/encomendas")}>
+          <CardItem onClick={() => window?.location.assign("/consulta-encomendas")}>
             <BsFillJournalBookmarkFill/>
             <p>Encomendas</p>
           </CardItem>
-          <CardItem onClick={() => window?.location.assign("/cadastro-produtos") }>
+          <CardItem onClick={() => window?.location.assign("/consulta-produtos") }>
             <FiShoppingCart />
             <p>Produtos</p>
           </CardItem>
