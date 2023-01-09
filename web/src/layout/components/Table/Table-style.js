@@ -37,10 +37,6 @@ export const Container = styled.table`
     font-size: 150%;
   }
 
-  tr>td:last-child {
-    width: 10%;
-  }
-
   tfoot > tr {
     height: 40px;
   }

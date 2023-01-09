@@ -15,6 +15,7 @@ import Devolucao from './pages/Devolucao';
 import HistoricoVendas from './pages/HistoricoVendas';
 import HistoricoVendasDetalhesPlaceHolder from './pages/HistoricoVendas/details'
 import HistoricoPerdas from './pages/HistoricoPerdas';
+import HistoricoLotes from './pages/HistoricoLotes';
 import ConsultaEncomendas from './pages/ConsultaEncomendas';
 import ConsultaProdutos from './pages/ConsultaProdutos';
 
@@ -35,6 +36,7 @@ export default function Routes(){
         <Route path="/historico-vendas" element={<HistoricoVendas />} />
         <Route path="/historico-vendas-detalhes" element={<HistoricoVendasDetalhesPlaceHolder />} />
         <Route path="/historico-perdas" element={<HistoricoPerdas />} />
+        <Route path="/historico-lotes" element={<HistoricoLotes />} />
         <Route path="/consulta-encomendas" element={<ConsultaEncomendas />} />
         <Route path="/consulta-produtos" element={<ConsultaProdutos />} />
     </MainRoutes>
