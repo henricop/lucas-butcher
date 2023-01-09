@@ -1,6 +1,7 @@
-import { Container, Tools, Table } from './styles';
+import { Container, Tools } from './styles';
 import InputGeneral from '../../Components/General/Input/InputGeneral';
 import ButtonDefault from '../../layout/components/ButtonDefault';
+import Table from '../../layout/components/Table';
 
 function HistoricoVendas(){
   return(

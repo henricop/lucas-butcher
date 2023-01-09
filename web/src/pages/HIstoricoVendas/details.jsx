@@ -1,11 +1,12 @@
-import { Container, Table, Tools} from './styles';
+import { Container, Tools} from './styles';
 import ButtonDefault from '../../layout/components/ButtonDefault';
+import Table from '../../layout/components/Table';
 
 function HistoricoVendas(){
   return(
     <Container>
       <Tools>
-        <h1>Cadastro de Produtos</h1>
+        <h1>Informações da Venda</h1>
         <div>
           <p>Cliente: XXX</p>
           <p>Data: dd/mm/yy</p>
