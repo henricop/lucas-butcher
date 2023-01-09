@@ -25,7 +25,7 @@ function HistoricoVendas(){
             <td>008231</td>
             <td>Matheus</td>
             <td>164.50 R$</td>
-            <td ><ButtonDefault text="Detalhes"  width="fit-content" margin="1px"/></td>
+            <td ><ButtonDefault onClick={() => window?.location.assign("/historico-vendas-detalhes")} text="Detalhes"  width="fit-content" margin="1px"/></td>
           </tr>
           <tr>
             <td>26/03/2022</td>

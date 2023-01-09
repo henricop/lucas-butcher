@@ -12,6 +12,7 @@ import Promocoes from './pages/Promocoes';
 import CadastroProdutos from './pages/CadastroProdutos';
 import Devolucao from './pages/Devolucao';
 import HistoricoVendas from './pages/HIstoricoVendas';
+import HistoricoVendasDetalhesPlaceHolder from './pages/HIstoricoVendas/details'
 
 export default function Routes(){
   return(
@@ -27,6 +28,7 @@ export default function Routes(){
         <Route path="/cadastro-produtos" element={<CadastroProdutos />} />
         <Route path="/devolucao" element={<Devolucao />} />
         <Route path="/historico-vendas" element={<HistoricoVendas />} />
+        <Route path="/historico-vendas-detalhes" element={<HistoricoVendasDetalhesPlaceHolder />} />
     </MainRoutes>
   );
 }

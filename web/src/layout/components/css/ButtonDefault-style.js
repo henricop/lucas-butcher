@@ -4,7 +4,7 @@ export const ButtonDefault = styled.button`
     width: ${props => props.width};
     margin: ${props => props.margin};
     height: 36px;
-    background-color: #3DC327;
+    background: ${props => props.bgColor};
     color: #FFFFFF;
     border-radius: 2px;
     border: none;
@@ -23,4 +23,5 @@ export const ButtonDefault = styled.button`
 ButtonDefault.defaultProps = {
     width: "200px",
     margin: "0px 0px 0px 0px",
+    bgColor: "#3DC327",
 }
