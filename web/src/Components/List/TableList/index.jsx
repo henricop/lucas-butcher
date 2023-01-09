@@ -51,7 +51,7 @@ const TableList = ({ setConfirmaVenda, setType }) => {
       </footer>
       <ContainerButtons>
         <button onClick={() => { setType("sangria"); setConfirmaVenda(); }}>Sangria</button>
-        <BsFillFileLock2Fill onClick={() => setType("closeCaixa")} />
+        <BsFillFileLock2Fill onClick={() => { setType("closeCaixa"); setConfirmaVenda(); }} />
       </ContainerButtons>
     </Container>
   )

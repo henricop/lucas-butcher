@@ -242,3 +242,106 @@ export const ContainerSangria = styled.div`
   }
 
 `
+export const ContainerCloseCaixa = styled.div`
+  display: flex;
+  min-width: 300px;
+  flex-direction:column;
+  width: 100%;
+  align-items:flex-start;
+  justify-content:space-around;
+  gap: 1rem;
+  h2{
+      text-align : center;
+      width: 100%;
+    }
+  
+    div#fechaCaixa {
+      width: 100%;
+      display: flex;
+      flex-direction:row;
+      align-items:center;
+      justify-content:flex-start;
+      label {
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: left;
+      }
+      label {
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      input,textarea {
+        width: 100%;
+        padding: .8rem .5rem;
+      }
+      
+    }
+
+  section#formaFechaCaixa {
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap: 1rem;
+
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction:row;
+      align-items:center;
+      justify-content:center;
+      text-align: left;
+      label {
+        width: 100%;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      label {
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+      }
+      input,textarea {
+        width: 100%;
+        padding: .8rem .5rem;
+      }
+      time {
+      font-size: 14px;
+      font-weight: 500;
+      padding: 1rem;
+    }
+      
+    }
+    
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+
+    div {
+      display: flex;
+      flex-direction:row;
+      align-items:center;
+      width: 100%;
+      justify-content: center;
+      gap: 1rem;
+      button{
+        padding: .5rem;
+        width: 100%;
+        transition: all 0.2s;
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.01);
+        }
+      }
+    }
+  }
+
+`

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, ContainerDefine, ContainerGrid, ContainerSangria } from './styles';
+import { Container, ContainerCloseCaixa, ContainerDefine, ContainerGrid, ContainerSangria } from './styles';
 
 
 
@@ -117,6 +117,65 @@ const ModalFormConfirm = ({ valor, closeModal, type = "formaVenda", setType }) =
         </footer>
 
       </ContainerSangria >
+
+    )
+  }
+  if (type === "closeCaixa") {
+
+    return (
+      <ContainerCloseCaixa>
+        <h2>Fechamento de Caixa</h2>
+        <div id="fechaCaixa">
+          <label for="Valor">Caixa inicial</label>
+          <input type="text" id="Valor" name="Valor" value="Valor"
+            placeholder='R$ 2000,00'
+          />
+        </div>
+        <h2>Entradas</h2>
+        <section id="formaFechaCaixa">
+          <div>
+            <label for="Dinheiro">Dinheiro</label>
+            <input type="text" id="Dinheiro" name="Dinheiro" value="Dinheiro"
+              placeholder='R$ 2000,00'
+            />
+          </div>
+          <div>
+            <label for="Cartao">Cartao</label>
+            <input type="text" id="Cartao" name="Cartao" value="Cartao"
+              placeholder='R$ 00,00'
+            />
+          </div>
+          <div>
+            <label for="Outros">Outros</label>
+            <input type="text" id="Outros" name="Outros" value="Outros"
+              placeholder='R$ 00,00'
+            />
+          </div>
+          <div>
+            <label for="sangria">Sangria</label>
+            <input type="text" id="sangria" name="sangria" value="sangria"
+              placeholder='R$ 00,00'
+            />
+          </div>
+          <div>
+            <time>{new Date().toLocaleString()}</time>
+          </div>
+          <div>
+            <label for="saldo">Saldo Final</label>
+            <input type="text" id="saldo" name="saldo" value="saldo"
+              placeholder='R$ 00,00' disabled
+            />
+          </div>
+        </section>
+
+        <footer>
+          <div>
+            <button onClick={closeModal}>Cancelar</button>
+            <button onClick={closeModal}>Confirmar</button>
+          </div>
+        </footer>
+
+      </ContainerCloseCaixa >
 
     )
   }
