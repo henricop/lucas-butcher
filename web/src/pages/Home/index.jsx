@@ -2,7 +2,7 @@ import React from 'react';
 
 // import api from '../../services/api';
 
-import { BsCashCoin, BsFillBookmarkStarFill, BsFillJournalBookmarkFill, BsFillPersonPlusFill, BsTrash } from 'react-icons/bs';
+import { BsCashCoin, BsFillBookmarkStarFill, BsFillJournalBookmarkFill, BsFillPersonPlusFill, BsTrash, BsPersonLinesFill } from 'react-icons/bs';
 import { FaCashRegister, FaStoreAlt } from 'react-icons/fa';
 import { FiShoppingCart } from 'react-icons/fi';
 import { GrUserWorker } from 'react-icons/gr';
@@ -37,6 +37,10 @@ function Home() {
           <CardItem onClick={() => window?.location.assign("/fornecedores")}>
             <BsFillPersonPlusFill/>
             <p>Cadastro de Fornecedores</p>
+          </CardItem>
+          <CardItem onClick={() => window?.location.assign("/consulta-interna")}>
+            <BsPersonLinesFill/>
+            <p>Consulta Interna</p>
           </CardItem>
           <CardItem  onClick={() => window?.location.assign("/historico-vendas") }>
             <BsCashCoin/>

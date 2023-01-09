@@ -1,4 +1,4 @@
-import { ButtonDefault } from './css/ButtonDefault-style'
+import { ButtonDefault } from './ButtonDefault-style'
 
 function Button(props){
     return(

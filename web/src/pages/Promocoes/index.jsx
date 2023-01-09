@@ -32,8 +32,8 @@ const Promocoes = () => {
       <Section noPaddingTop >
         <TemplateContentSection>
           <div>
-            <InputGeneral text="Início da Promoção" placeholder="dd/mm/yyyy" type="initial-date" refName="initial-date" />
-            <InputGeneral text="Término da Promoção" placeholder="dd/mm/yyyy" type="final-date" refName="final-date" />
+            <InputGeneral text="Início da Promoção" placeholder="dd/mm/yyyy" type="date" refName="initial-date" />
+            <InputGeneral text="Término da Promoção" placeholder="dd/mm/yyyy" type="date" refName="final-date" />
             <InputGeneral text="Desconto" placeholder="0.00%" type="number" refName="desconto" />
           </div>
         </TemplateContentSection>
