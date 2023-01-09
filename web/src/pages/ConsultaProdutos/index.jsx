@@ -93,10 +93,10 @@ function ConsultaInterna(){
         <Container>
           <div className='wrapper'>
             <div className='title-container'>
-              <h1>Consulta Interna</h1>
+              <h1>Consulta Produtos</h1>
               <div className='buttons-container'>
-                <ButtonDefault text="Cadastrar produto" width="200px" margin="0px 0px"/>
-                <ButtonDefault text="Nova Compra" width="200px" margin="0px 0px"/>
+                <ButtonDefault link="/cadastro-produtos" text="Cadastrar produto" width="200px" margin="0px 0px"/>
+                <ButtonDefault link="/lote" text="Nova Compra" width="200px" margin="0px 0px"/>
               </div>
             </div>
             <section className='input-section'>
