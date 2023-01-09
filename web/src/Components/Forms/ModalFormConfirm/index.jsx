@@ -1,13 +1,12 @@
 import React from 'react';
 
-import { Container, ContainerGrid } from './styles';
+import { Container, ContainerDefine, ContainerGrid, ContainerSangria } from './styles';
 
 
 
-const ModalFormConfirm = ({ valor, closeModal, type = "formaVenda" }) => {
+const ModalFormConfirm = ({ valor, closeModal, type = "formaVenda", setType }) => {
 
   if (type === "formaVenda") {
-
     return (
       <ContainerGrid>
         <section id="forma">
@@ -36,10 +35,88 @@ const ModalFormConfirm = ({ valor, closeModal, type = "formaVenda" }) => {
           </div>
         </section>
         <section id="valor">
-          <h2>Valor a pagar</h2><p>OKOKOKOK</p>
+          <div id="valor-grid">
+            <h2>Valor a pagar</h2>
+            <div>
+              <input type="text" placeholder="R$ 2000,00" />
+            </div>
+          </div>
+          <input type="text" placeholder="R$ 2000,00" />
         </section>
+        <button onClick={closeModal}>Cancelar</button>
+        <button onClick={() => {
+          setType("formPagamentos");
+          // closeModal();
+        }}>Confirmar</button>
 
       </ContainerGrid >
+
+    )
+  }
+  if (type === "formPagamentos") {
+
+    return (
+      <ContainerDefine>
+        <section id="formaPayment">
+          <div>
+            <label for="Método">Método</label>
+            <input type="text" id="Método" name="Método" value="Método"
+              placeholder='À vista'
+            />
+          </div>
+          <div>
+            <label for="parcelas">Parcelas</label>
+            <input type="text" id="parcelas" name="parcelas" value="parcelas"
+              placeholder='2x' />
+          </div>
+          <div>
+            <label for="Bandeira">Bandeira</label>
+            <input type="text" id="Bandeira" name="Bandeira" value="Bandeira"
+              placeholder='Mastercard'
+            />
+          </div>
+          <div>
+            <label for="operadora">Pix</label>
+            <input type="text" id="operadora" name="operadora" value="operadora"
+              placeholder='Stone' />
+          </div>
+        </section>
+
+        <button onClick={closeModal}>Confirmar</button>
+        <button onClick={closeModal}>Cancelar</button>
+
+      </ContainerDefine >
+
+    )
+  }
+  if (type === "sangria") {
+
+    return (
+      <ContainerSangria>
+        <h2>Sangria</h2>
+        <section id="formaSangria">
+          <div>
+            <label for="Valor">Valor</label>
+            <input type="text" id="Valor" name="Valor" value="Valor"
+              placeholder='R$ 2000,00'
+            />
+          </div>
+          <div>
+            <label for="Descricao">Descrição</label>
+            <textarea type="text" id="Descricao" name="Descricao" value="Descricao"
+              placeholder='descreva o ocorrido' />
+          </div>
+        </section>
+
+        <footer>
+          <time>{new Date().toLocaleString()}</time>
+          <div>
+            <button onClick={closeModal}>Cancelar</button>
+            <button onClick={closeModal}>Confirmar</button>
+          </div>
+        </footer>
+
+      </ContainerSangria >
 
     )
   }

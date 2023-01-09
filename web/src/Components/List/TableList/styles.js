@@ -59,8 +59,8 @@ export const Container = styled.div`
       width: 100%;
       padding: .8rem;
       margin-top: 10px;
-      transition: all .2s;
       font-weight: 500;
+      transition: all .2s;
       &:hover {
         cursor: pointer;
         transform: scale(1.01);
@@ -89,10 +89,20 @@ export const ContainerButtons = styled.div`
     color: #fff;
     padding: .5rem 2rem;
     border-radius: 5px;
+    transition: all .2s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+    }
   }
   svg {
     font-size: 30px;
     color: #3DC327;
+    transition: all .2s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+    }
   }
 
 

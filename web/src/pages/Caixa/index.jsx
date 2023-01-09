@@ -22,6 +22,7 @@ const customStyles = {
 
 const Caixa = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [type, setType] = useState("formaVenda");
   let subtitle;
 
   function openModal() {
@@ -62,9 +63,10 @@ const Caixa = () => {
             </ConteinerProduct>
             <ClientInput placeholder='Cliente' />
           </div>
-          <TableList setConfirmaVenda={openModal} />
+          <TableList setConfirmaVenda={openModal} setType={setType} />
         </TemplateContentSectionFinal>
       </Section>
+      {console.log(type)}
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -72,7 +74,7 @@ const Caixa = () => {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <ModalFormConfirm valor="200" closeModal={closeModal} />
+        <ModalFormConfirm valor="200" closeModal={closeModal} type={type} setType={setType} />
       </Modal>
     </Container >
   );

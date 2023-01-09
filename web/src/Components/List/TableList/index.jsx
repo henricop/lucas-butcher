@@ -3,7 +3,7 @@ import { AiFillMinusSquare } from 'react-icons/ai';
 import { BsFillFileLock2Fill } from 'react-icons/bs';
 import { Container, ContainerButtons } from './styles';
 
-const TableList = ({ setConfirmaVenda }) => {
+const TableList = ({ setConfirmaVenda, setType }) => {
 
 
   return (
@@ -50,8 +50,8 @@ const TableList = ({ setConfirmaVenda }) => {
         <button onClick={() => setConfirmaVenda()}>Confirmar Venda</button>
       </footer>
       <ContainerButtons>
-        <button>Sangria</button>
-        <BsFillFileLock2Fill />
+        <button onClick={() => { setType("sangria"); setConfirmaVenda(); }}>Sangria</button>
+        <BsFillFileLock2Fill onClick={() => setType("closeCaixa")} />
       </ContainerButtons>
     </Container>
   )
