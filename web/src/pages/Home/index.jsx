@@ -62,7 +62,7 @@ function Home() {
             <MdOutlineSettingsBackupRestore/>
             <p>Devolução</p>
           </CardItem>
-          <CardItem>
+          <CardItem  onClick={() => window?.location.assign("/Historico-perdas") }>
             <BsTrash />
             <p>Perda de Produto</p>
           </CardItem>

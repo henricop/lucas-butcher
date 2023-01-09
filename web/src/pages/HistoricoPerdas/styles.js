@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-
+  tfoot > tr > td {
+    color: red;
+  }
 `
 
 export const Tools = styled.div`
