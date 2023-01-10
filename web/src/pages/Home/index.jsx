@@ -114,3 +114,5 @@ function Home() {
       </Modal>
     </>
   );
+
+export default Home;
