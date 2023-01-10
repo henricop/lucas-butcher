@@ -47,6 +47,7 @@ function Home() {
 
 
   return (
+    <>
       <Container>
         <Section>
           <TemplateContentStyle>
