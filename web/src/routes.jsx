@@ -13,7 +13,7 @@ import Encomendas from './pages/Encomendas';
 import Fornecedores from './pages/Fornecedores';
 import Funcionarios from './pages/Funcionarios';
 import HistoricoVendas from './pages/HIstoricoVendas';
-import HistoricoVendasDetalhes from './pages/HistoricoVendas/details';
+import HistoricoVendasDetalhes from './pages/HIstoricoVendas/details';
 import HistoricoLotes from './pages/HistoricoLotes';
 import HistoricoPerdas from './pages/HistoricoPerdas';
 import Home from './pages/Home';
