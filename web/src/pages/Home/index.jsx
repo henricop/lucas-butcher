@@ -47,8 +47,8 @@ function Home() {
 
 
   return (
-      <Container>
-        <Section>
+    <Container>
+      <Section>
           <TemplateContentStyle>
             <CardItem id="caixa" onClick={() => openModal()}>
               <FaCashRegister />
@@ -99,9 +99,7 @@ function Home() {
               <p>Perda de Produto</p>
             </CardItem>
           </TemplateContentStyle>
-        </Section>
-
-      </Container>
+      </Section>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}
@@ -111,5 +109,8 @@ function Home() {
       >
         <ModalForm valor={valor} setValor={setValor} closeModal={closeModal} />
       </Modal>
-    </>
-  );
+    </Container>
+  )
+};
+
+export default Home;
