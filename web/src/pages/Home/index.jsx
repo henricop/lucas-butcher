@@ -78,7 +78,7 @@ function Home() {
               <BsCashCoin />
               <p>Histórico de Vendas</p>
             </CardItem>
-            <CardItem onClick={() => window?.location.assign("/encomendas")}>
+            <CardItem onClick={() => window?.location.assign("/consulta-encomendas")}>
               <BsFillJournalBookmarkFill />
               <p>Encomendas</p>
             </CardItem>
@@ -94,7 +94,7 @@ function Home() {
               <MdOutlineSettingsBackupRestore />
               <p>Devolução</p>
             </CardItem>
-            <CardItem>
+            <CardItem onClick={() => window?.location.assign("/historico-perdas")}>
               <BsTrash />
               <p>Perda de Produto</p>
             </CardItem>
