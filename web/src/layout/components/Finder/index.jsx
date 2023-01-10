@@ -1,11 +1,11 @@
 import {Container} from './Finder-style'
 
-function Finder(props){
+function Finder({width, title, type, placeholder}){
        return(        
-        <Container width={props.width}>
-            <h1 className='title'>{props.title}</h1>
+        <Container width={width}>
+            <h1 className='title'>{title}</h1>
             <div className='inpt-container'>
-                <input type={props.type} placeholder={props.placeholder}/>
+                <input type={type} placeholder={placeholder}/>
                 <button className='plus-bttn'>+</button>
             </div>
         </Container>

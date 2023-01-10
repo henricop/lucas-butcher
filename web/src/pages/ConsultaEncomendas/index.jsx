@@ -1,38 +1,50 @@
+import GoBack from '../../Components/Buttons/GoBack';
 import { Section, TemplateContent } from '../../Components/Layout';
 import ButtonDefault from '../../layout/components/ButtonDefault';
-import UserList from '../../layout/components/Forms/Table';
-import InputSelect from '../../layout/components/InputSelect';
+import Table from '../../layout/components/Forms/Table';
+import Input from '../../layout/components/Input';
 import Search from '../../layout/components/Search';
 
 import { Container } from './styles';
 
 
-function ConsultaInterna(){
-  const tableHead = ["Tipo", "email", "CPF/CNPJ", "Telefone", "Data de Cadastro"]
+function ConsultaInterna() {
+  const tableHead = ["Produto", "Quantidade", "Valor a pagar", "Valor pago", "Status"]
 
   const tableItems = [
-  {"id": 1234, "name": "Usuario 01", "type": "Cliente", "email": "example@example.com", "cpf": "120.123.123-45", "phone": "(xx) xxxx-xxxx", "register_date": "00/00/0000"}, 
-  {"id": 4321, "name": "Funcionário 01", "type": "Funcionario", "email": "example@example.com", "cpf": "321.321.321-12", "phone": "(xx) xxxx-xxxx", "register_date": "00/00/0000"},
-  {"id": 5342, "name": "Usuario 01", "type": "Cliente", "email": "example@example.com", "cpf": "120.123.123-45", "phone": "(xx) xxxx-xxxx", "register_date": "00/00/0000"}, 
-  {"id": 5434, "name": "Empresa 01", "type": "Empresa", "email": "example@example.com", "cpf": "321.321.321-12", "phone": "(xx) xxxx-xxxx", "register_date": "00/00/0000"},
-  {"id": 4921, "name": "Empresa 02", "type": "Empresa", "email": "example@example.com", "cpf": "120.123.123-45", "phone": "(xx) xxxx-xxxx", "register_date": "00/00/0000"}, 
-  {"id": 5828, "name": "Funcionário 02", "type": "Funcionario", "email": "example@example.com", "cpf": "321.321.321-12", "phone": "(xx) xxxx-xxxx", "register_date": "00/00/0000"},
+    { "id": 1234, "name": "Cliente 01", "produto": "Picanha", "quantidade": "2kg", "valor": "46,00", "pago": "46,00", "status": "concluido" },
+    { "id": 4321, "name": "Funcionário 01", "produto": "Frango Congelado", "quantidade": "2.6kg", "valor": "32,00", "pago": "0,00", "status": "pendente" },
+    { "id": 5342, "name": "Cliente 02", "produto": "Linguiça Suína", "quantidade": "0.700kg", "valor": "21,00", "pago": "21,00", "status": "concluido" },
+    { "id": 5434, "name": "Cliente 04", "produto": "Lombo de Porco", "quantidade": "1.3kg", "valor": "23,00", "pago": "0,00", "status": "cancelado" },
+    { "id": 4921, "name": "Funcionario 02", "produto": "Cupim", "quantidade": "1.45kg", "valor": "52,00", "pago": "20,00", "status": "pendente" },
+    { "id": 5828, "name": "Cliente 03", "produto": "Batata Palha", "quantidade": "2 un", "valor": "18,00", "pago": "18,00", "status": "concluido" },
   ]
 
-  const options = [{"id": 1, "name": "Cliente"},{"id": 2, "name": "Funcionário"}, {"id": 3, "name": "Empresa"}]
-
-  return(
+  return (
     <Section>
       <TemplateContent>
         <Container>
           <div className='wrapper'>
-            <h1>Consulta Interna</h1>
+            <GoBack />
+            <div className='title-container'>
+              <h1>Consulta Encomendas</h1>
+              <div className='buttons-container'>
+                <ButtonDefault link="/Encomendas" text="Cadastrar Encomenda" width="200px" margin="0px 0px" />
+              </div>
+            </div>
             <section className='input-section'>
-              <Search width="700px" title="Busque por pessoas ou empresas" placeholder="Digite o nome ou código do cliente, funcionário ou empresa"/>
-              <InputSelect width="200px" title="Tipo" name="tipo" id="tipo" options={options}/>
-              <ButtonDefault text="Buscar" width="200px" margin="50px 0px"/>
+              <Search width="700px" title="Busque por encomendas" placeholder="Digite o nome ou código do cliente, funcionário ou empresa" />
+              <Input width="300px" title="Data de Cadastro" type="date" />
+              <ButtonDefault text="Buscar" width="200px" margin="50px 0px" />
             </section>
-            <UserList titles={tableHead} itemKeys={['type', 'email', 'cpf', 'phone', 'register_date']} cellwidth="200px" items={tableItems}/>
+            <Table
+              titles={tableHead}
+              name={'name'}
+              id={'id'}
+              itemKeys={['produto', 'quantidade', 'valor', 'pago', 'status']}
+              cellwidth="200px"
+              items={tableItems}
+            />
           </div>
         </Container>
       </TemplateContent>

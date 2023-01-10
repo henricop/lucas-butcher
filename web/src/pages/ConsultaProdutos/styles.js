@@ -44,7 +44,11 @@ export const Container = styled.div`
     justify-content: space-between;
   }
 
-  .buttons-container > button{
+  .buttons-container{
+    display: flex;
+  }
+
+  .buttons-container > div{
     margin-left: 20px;
   }
 `;

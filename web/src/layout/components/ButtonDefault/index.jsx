@@ -1,8 +1,16 @@
 import { ButtonDefault } from './ButtonDefault-style'
 
-function Button(props){
+function Button({margin, width, text, link, onClick}){
+    const button = (<ButtonDefault margin={margin} width={width} onClick={onClick}>{text}</ButtonDefault>)
     return(
-        <ButtonDefault margin={props.margin} width={props.width}>{props.text}</ButtonDefault>
+        <div>
+        {
+        link ? 
+            <a href={link}> {button} </a>
+            : 
+            button
+        }
+        </div>
     )
 }
 
